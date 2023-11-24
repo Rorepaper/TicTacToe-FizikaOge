@@ -136,7 +136,7 @@ def Reset():
     score.config(text=str(wins1) + ' : ' + str((wins2)))
 
 # Объявление переменных
-font.add_file('reef.otf')
+font.add_file("src/reef.otf")
 soundOn = True
 time1 = ''
 w = 115
@@ -154,18 +154,18 @@ moves = []
 
 winComb = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
 root = Tk()
-music = PhotoImage(file=r"note.png")
+music = PhotoImage(file=r"src/img/note.png")
 music = music.subsample(8, 8)
-sound = PhotoImage(file=r"sound.png")
+sound = PhotoImage(file=r"src/img/sound.png")
 sound = sound.subsample(5, 5)
-reset = PhotoImage(file=r"reset.png")
+reset = PhotoImage(file=r"src/img/reset.png")
 reset = reset.subsample(9, 9)
 mode = 'Бот'
 field = '3x3'
 
 # Построение окна Tkinter
 root['bg'] = '#8E9B97'
-root.iconphoto(False, PhotoImage(file='ico.png'))
+root.iconphoto(False, PhotoImage(file='src/img/ico.png'))
 root.title('TicTacToe')
 root.wm_attributes('-alpha', 0.97)
 root.geometry('400x500')
@@ -316,7 +316,7 @@ class Btn():
 tick()
 Btn.show(0)
 mixer.init()
-mixer.music.load('music.mp3')
+mixer.music.load('src/snd/music.mp3')
 mixer.music.play(-1)
-clickSound = mixer.Sound('click.mp3')
+clickSound = mixer.Sound('src/snd/click.mp3')
 root.mainloop()

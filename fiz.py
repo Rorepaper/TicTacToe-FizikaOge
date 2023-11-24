@@ -29,7 +29,7 @@ def result(bol):
 
 corrects = 0
 number = 0
-file = open('fiz.txt', encoding='utf-8')
+file = open('src/fiz.txt', encoding='utf-8')
 quests = []
 for col in file:
     quests.append(col)
@@ -45,7 +45,7 @@ res = []
 root = Tk()
 # Построение окна Tkinter
 root['bg'] = '#8E9B97'
-root.iconphoto(False, PhotoImage(file='ico.png'))
+root.iconphoto(False, PhotoImage(file='src/img/ico.png'))
 root.title('ФИЗИКА ОГЭ')
 root.wm_attributes('-alpha', 0.97)
 root.geometry('400x400')
